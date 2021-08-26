@@ -1,0 +1,84 @@
+@import '../../index.scss';
+
+
+.header{
+    .navbar{
+        z-index: 6;
+        background: transparent !important;
+        transition: all 0.3s ease;
+        padding: 5px 45px;
+        font-family: $fontPoppins;
+        .navbar-brand{
+            display: flex;
+            border-radius: 3px;
+            .img-logo{
+                width: 60px;
+                height: 60px;
+            }
+            div{
+                align-self: center;
+                div:nth-child(1){
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                div:nth-child(2){
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+        ul a{
+            margin:0 10px;
+            font-weight: 500;
+            color: #111;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+            cursor: pointer;
+            li{
+                padding: 3px 10px;
+            }
+        }
+        ul a:hover{
+            background-color: $colorRedMaroon;
+            color: #fff;
+        }
+        ul .link-active{
+            background-color: $colorRedMaroon;
+            color: #fff;
+        }
+    }
+}
+
+.header{
+    .navbar.scroll{
+        background: $colorGrey !important;
+    }
+}
+
+@media (max-width: 500px){
+    .header{
+        .navbar{
+            padding: 0;
+            ul{
+                margin: auto;
+            }
+            ul a{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1000px){
+    .header{
+        .navbar{
+            padding: 0;
+            ul{
+                margin: auto;
+            }
+            ul a{
+                text-align: center;
+            }
+        }
+    }
+}

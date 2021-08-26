@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Sigmar+One&display=swap');
+
+
 body {
+  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +15,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a{
+  text-decoration: none;
+}
+
+// COLOR
+$colorRedMaroon: #800000;
+$colorBlueNavy: #000080;
+$colorGrey: #CCD1D1;
+$colorGreyDark: #9a9c9c;
+
+// FONT
+$fontPoppins: 'Poppins', sans-serif;
+$fontSigmar: 'Sigmar One', cursive;

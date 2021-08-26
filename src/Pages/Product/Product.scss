@@ -1,0 +1,90 @@
+@import "../../index.scss";
+
+.product {
+  padding: 2em;
+  border-bottom: 1px solid black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .title-product {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    font-family: $fontPoppins;
+  }
+
+  .row > * {
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10px;
+
+    .card {
+      cursor: pointer;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      margin: auto;
+      .card-text {
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+
+    .card-container {
+      position: relative;
+      cursor: pointer;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      margin: auto;
+      transition: 0.5s ease;
+      opacity: 1;
+      display: block;
+      backface-visibility: hidden;
+    }
+
+    .card:hover .card-container {
+      background-color: rgba(156, 156, 156, 0.9);
+      opacity: 0.3;
+    }
+
+    .card:hover .btn-card {
+      opacity: 1;
+    }
+
+    .btn-card {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.5s ease;
+
+      button {
+        background-color: $colorRedMaroon !important;
+        color: #fff;
+      }
+    }
+  }
+
+  .product-link {
+    button {
+      background-color: $colorRedMaroon !important;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      font-weight: 500;
+      font-family: $fontPoppins;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .product {
+    .product-link {
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
+}

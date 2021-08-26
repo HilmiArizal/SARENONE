@@ -1,0 +1,12 @@
+@import '../../index.scss';
+
+.team{
+    border-bottom: 1px black solid;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontSigmar;
+    font-size: 50px;
+    text-align: center;
+}

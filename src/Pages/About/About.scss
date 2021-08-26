@@ -1,0 +1,11 @@
+@import '../../index.scss';
+
+.about{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontSigmar;
+    font-size: 50px;
+    text-align: center;
+}

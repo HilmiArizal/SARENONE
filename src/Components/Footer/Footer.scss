@@ -1,0 +1,63 @@
+@import '../../index.scss';
+
+
+.footer{
+    min-height: 20vh;
+    font-size: 30px;
+    background-color: $colorGrey;
+    padding: 5px 100px;
+    .map{
+        height: 200px;
+        width: 350px;
+       border: 1px solid #111;
+       border-radius: 5px;
+    }
+    .row:nth-child(1) {
+       padding-top: 10px;
+        height: 100%;
+        .col-md:nth-child(1){
+            .title{
+                font-size: 24px;
+                font-weight: 600;
+            }
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .icon{
+                margin-right: 20px;
+            }
+        }
+        .col-md:nth-child(2){
+            display: flex;
+            justify-content: center;
+        }
+        .col-md:nth-child(3){
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+           
+        }
+    }
+    .copyright{
+        align-items: center;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px){
+    .footer{
+        .col-md{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1000px){
+    .footer{
+        .col-md{
+            margin-bottom: 20px;
+        }
+    }
+}
