@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import { RingLoader } from "react-spinners";
 import Header from "./Components/Header/Header";
 import Home from "./Pages/Home/Home";
@@ -25,16 +25,18 @@ function App() {
     <div className="app">
       {loading ? (
         <div className="loader-spinner">
-          <RingLoader color={'#800000'} loading={loading} size={150} />
+          <RingLoader color={"#800000"} loading={loading} size={150} />
         </div>
       ) : (
         <div>
-          <Header />
-          <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/detailproduct/:id" component={DetailProduct} />
-          </Switch>
-          <Footer />
+          <HashRouter basename="/">
+            <Header />
+            <Switch>
+              <Route path="/" component={Home} exact />
+              <Route path="/detailproduct/:id" component={DetailProduct} />
+            </Switch>
+            <Footer />
+          </HashRouter>
         </div>
       )}
     </div>
