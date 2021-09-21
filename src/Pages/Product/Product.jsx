@@ -8,7 +8,7 @@ import "./Product.scss";
 class Product extends Component {
   componentDidMount() {
     this.props.FetchProduct();
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -41,7 +41,9 @@ class Product extends Component {
           })}
         </div>
         <div className="product-link">
-          <button className="btn">All SarenOne Product</button>
+          <Link to="/product">
+            <button className="btn">All SarenOne Product</button>
+          </Link>
         </div>
       </div>
     );

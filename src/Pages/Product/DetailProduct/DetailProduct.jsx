@@ -3,8 +3,8 @@ import { connect } from "react-redux";
 import { API_URL_LOCAL } from "../../../Services/API_Local";
 import { FetchProductId } from "../../../Services/Redux/Actions";
 import { FaArrowLeft } from "react-icons/fa";
-import "./DetailProduct.scss";
 import { Link } from "react-router-dom";
+import "./DetailProduct.scss";
 
 class DetailProduct extends Component {
   componentDidMount() {

@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import "./App.scss";
 import DetailProduct from "./Pages/Product/DetailProduct/DetailProduct";
+import AllProduct from "./Pages/Product/AllProduct/AllProduct";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -34,6 +35,7 @@ function App() {
             <Switch>
               <Route path="/" component={Home} exact />
               <Route path="/detailproduct/:id" component={DetailProduct} />
+              <Route path="/product" component={AllProduct} />
             </Switch>
             <Footer />
           </HashRouter>

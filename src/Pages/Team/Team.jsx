@@ -1,18 +1,21 @@
-import React, { Component } from 'react';
-import './Team.scss';
-
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { fetchTeam } from "../../Services/Redux/Actions";
+import "./Team.scss";
 
 class Team extends Component {
+  componentDidMount() {
+    this.props.fetchTeam();
+  }
 
-    state = {  }
-
-    render() { 
-        return ( 
-            <div className="team">
-                TEAM PAGE WORKS!
-            </div>
-         );
-    }
+  render() {
+    return <div className="team">TEAM PAGE WORKS!</div>;
+  }
 }
- 
-export default Team;
+
+const mapStatetoProps = (state) => {
+  console.log(state.team);
+  return {};
+};
+
+export default connect(mapStatetoProps, { fetchTeam })(Team);

@@ -15,7 +15,7 @@ function Header() {
   });
 
   const handleScroll = () => {
-    if(path === "detailproduct"){
+    if(path === "detailproduct" || path === "product"){
       if (window.scrollY > 600) {
         setAddClass(true);
       } else {
@@ -24,7 +24,7 @@ function Header() {
     }
   };
 
-  return path === "detailproduct" ? (
+  return path === "detailproduct" || path === "product" ? (
     <div className="header">
       <nav
         onScroll={handleScroll}
