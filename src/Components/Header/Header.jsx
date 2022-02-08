@@ -28,7 +28,7 @@ function Header() {
     <div className="header">
       <nav
         onScroll={handleScroll}
-        className={`navbar navbar-expand-lg navbar-light bg-light fixed-top scroll`}
+        className={`navbar navbar-expand-lg navbar-light bg-light scroll`}
       >
         <div className="container-fluid">
           <LinkRoute to="/" className="navbar-brand">

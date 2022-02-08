@@ -31,7 +31,7 @@ function App() {
       ) : (
         <div>
           <HashRouter basename="/">
-            <Header />
+            {/* <Header /> */}
             <Switch>
               <Route path="/" component={Home} exact />
               <Route path="/detailproduct/:id" component={DetailProduct} />
