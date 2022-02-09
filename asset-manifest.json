@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SarenOne/static/css/main.b27a50f0.chunk.css",
-    "main.js": "/SarenOne/static/js/main.c6f61429.chunk.js",
-    "main.js.map": "/SarenOne/static/js/main.c6f61429.chunk.js.map",
+    "main.js": "/SarenOne/static/js/main.81252fc7.chunk.js",
+    "main.js.map": "/SarenOne/static/js/main.81252fc7.chunk.js.map",
     "runtime-main.js": "/SarenOne/static/js/runtime-main.cea79046.js",
     "runtime-main.js.map": "/SarenOne/static/js/runtime-main.cea79046.js.map",
     "static/js/2.8cb72cef.chunk.js": "/SarenOne/static/js/2.8cb72cef.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.cea79046.js",
     "static/js/2.8cb72cef.chunk.js",
     "static/css/main.b27a50f0.chunk.css",
-    "static/js/main.c6f61429.chunk.js"
+    "static/js/main.81252fc7.chunk.js"
   ]
 }
