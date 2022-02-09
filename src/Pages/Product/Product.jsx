@@ -20,19 +20,24 @@ class Product extends Component {
             return (
               <div className="col-md-3" key={index}>
                 <div className="card" style={{ width: "18rem" }}>
-                  <div className="card-container">
-                    <img
-                      src={API_URL_LOCAL + item.image}
-                      className="card-img-top"
-                      alt="img-product"
-                    />
-                    <div className="card-body">
-                      <p className="card-text">{item.name}</p>
+                  <Link to={`detailproduct/${item._id}`}>
+                    <div className="card-container">
+                      <div className="card-image">
+                        <img
+                          src={API_URL_LOCAL + item.image}
+                          className="card-img-top"
+                          alt="img-product"
+                        />
+                      </div>
                     </div>
+                  </Link>
+                  <div className="card-body">
+                    <div className="card-name">{item.name}</div>
+                    <div className="card-weight">({item.weight}gr)</div>
                   </div>
                   <div className="btn-card">
                     <Link to={`detailproduct/${item._id}`}>
-                      <button className="btn btn-sm">Detail Product</button>
+                      <button className="btn btn-sm">Choose Product</button>
                     </Link>
                   </div>
                 </div>

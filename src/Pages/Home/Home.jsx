@@ -12,11 +12,11 @@ class Home extends Component {
         <div id="section-home">
           <div
             id="carouselExampleControls"
-            class="carousel slide"
+            className="carousel slide"
             data-bs-ride="carousel"
           >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
                 <div className="home-1">
                   <div className="title">
                     <Link

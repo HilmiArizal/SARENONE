@@ -1,6 +1,15 @@
 @import '../../index.scss';
 
-
+.carousel{
+    .carousel-control-prev-icon{
+        background-color: $colorRedMaroon;
+        padding: 30px !important;
+    }
+    .carousel-control-next-icon{
+        background-color: $colorRedMaroon;
+        padding: 30px !important;
+    }
+}
 
 .home-1{
     min-height: 100vh;

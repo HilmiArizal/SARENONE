@@ -24,18 +24,26 @@ class AllProduct extends Component {
             return (
               <div className="col-md-3" key={index}>
                 <div className="card">
-                  <div className="image">
-                    <div className="button">
-                      <Link to={`detailproduct/${item._id}`}>
-                        <button className="btn btn-primary btn-sm">
-                          Detail Product
-                        </button>
-                      </Link>
+                  <Link to={`detailproduct/${item._id}`}>
+                    <div className="card-container">
+                      <div className="card-image">
+                        <img
+                          src={API_URL_LOCAL + item.image}
+                          alt="img-product"
+                        />
+                      </div>
                     </div>
-                    <img src={API_URL_LOCAL + item.image} alt="img-product" />
+                  </Link>
+                  <div className="card-body">
+                    <div className="card-name">{item.name}</div>
+                    <div className="card-weight">({item.weight}gr)</div>
                   </div>
-                  <div className="text">
-                    <div className="name">{item.name}</div>
+                  <div className="button">
+                    <Link to={`detailproduct/${item._id}`}>
+                      <button className="btn btn-primary btn-sm">
+                        Choose Product
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

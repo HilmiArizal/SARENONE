@@ -22,16 +22,20 @@
     margin-top: 10px;
 
     .card {
-      cursor: pointer;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       margin: auto;
-      .card-text {
+      .card-name {
         font-weight: 600;
+        text-align: center;
+      }
+      .card-weight {
+        font-size: 14px;
         text-align: center;
       }
     }
 
     .card-container {
+      width: 100%;
       position: relative;
       cursor: pointer;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -40,9 +44,21 @@
       opacity: 1;
       display: block;
       backface-visibility: hidden;
-    }
+      .card-image{
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        img{
+          width: 80%;
+        }
+        }
+      }
 
     .card:hover .card-container {
+      cursor: pointer;
       background-color: rgba(156, 156, 156, 0.9);
       opacity: 0.3;
     }
@@ -54,7 +70,7 @@
     .btn-card {
       opacity: 0;
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       transition: 0.5s ease;
