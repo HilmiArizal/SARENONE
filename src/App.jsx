@@ -7,6 +7,7 @@ import Footer from "./Components/Footer/Footer";
 import "./App.scss";
 import DetailProduct from "./Pages/Product/DetailProduct/DetailProduct";
 import AllProduct from "./Pages/Product/AllProduct/AllProduct";
+import WhatsApp from "./Components/WhatsApp/WhatsApp";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -16,7 +17,7 @@ function App() {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 1000);
     };
 
     fetchLoading();
@@ -38,6 +39,9 @@ function App() {
               <Route path="/product" component={AllProduct} />
             </Switch>
             <Footer />
+            <div className="whatsapp">
+              <WhatsApp/>
+            </div>
           </HashRouter>
         </div>
       )}

@@ -3,11 +3,13 @@
 .carousel{
     .carousel-control-prev-icon{
         background-color: $colorRedMaroon;
-        padding: 30px !important;
+        padding: 20px !important;
+        border-radius: 3px;
     }
     .carousel-control-next-icon{
         background-color: $colorRedMaroon;
-        padding: 30px !important;
+        padding: 20px !important;
+        border-radius: 3px;
     }
 }
 
@@ -114,4 +116,11 @@
     left: 0;
     right: 0;
     background-color: rgba(114, 114, 114, 0.6);
+}
+
+@media (max-width: 500px){
+    .home-1{
+        width: 50%;
+        margin: auto;
+    }
 }

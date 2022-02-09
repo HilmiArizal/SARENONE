@@ -11,24 +11,23 @@ function Header() {
   const path = location.pathname.split("/")[1];
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
   });
 
   const handleScroll = () => {
-    if(path === "detailproduct" || path === "product"){
-      if (window.scrollY > 600) {
+    console.log(window.scrollY);
+      if (window.scrollY >= 500) {
         setAddClass(true);
       } else {
         setAddClass(false);
       }
-    }
   };
 
   return path === "detailproduct" || path === "product" ? (
     <div className="header">
       <nav
         onScroll={handleScroll}
-        className={`navbar navbar-expand-lg navbar-light bg-light scroll`}
+        className={`navbar navbar-expand-lg navbar-light bg-light fixed-top scroll`}
       >
         <div className="container-fluid">
           <LinkRoute to="/" className="navbar-brand">
