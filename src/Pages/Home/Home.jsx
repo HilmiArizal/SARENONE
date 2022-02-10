@@ -48,22 +48,6 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
-                <div className="home-3">
-                  <div className="title">
-                    <Link
-                      activeClass="link-active"
-                      to="section-product"
-                      spy={true}
-                      smooth={true}
-                      offset={-25}
-                      duration={100}
-                    >
-                      <button className="btn btn-sm">SarenOne Product</button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
             </div>
             <button
               className="carousel-control-prev"
