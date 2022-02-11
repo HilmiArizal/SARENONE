@@ -84,6 +84,10 @@ class Home extends Component {
           </div>
         </div> */}
 
+        <div id="section-about">
+          <About />
+        </div>
+        
         <div id="section-product">
           <Product />
         </div>
@@ -92,9 +96,6 @@ class Home extends Component {
           <Team />
         </div>
 
-        <div id="section-about">
-          <About />
-        </div>
       </div>
     );
   }

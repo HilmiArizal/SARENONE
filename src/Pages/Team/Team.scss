@@ -1,12 +1,89 @@
 @import '../../index.scss';
 
-.team{
-    border-bottom: 1px black solid;
+.team {
+    padding: 2em;
+    border-bottom: 1px solid black;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: $fontSigmar;
-    font-size: 50px;
-    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .title-team {
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        font-family: $fontPoppins;
+    }
+
+    .body-team {
+        .row>* {
+
+            margin: auto;
+            padding-left: 0;
+            padding-right: 0;
+            margin-top: 10px;
+
+            .card {
+                cursor: pointer;
+                margin: 20px;
+                // padding: 20px;
+                // background-color: rgb(23, 23, 168);
+                .card-image{
+
+                    .image {
+                        display: flex;
+                        align-items: center;
+                        padding: 20px;
+                        margin: auto;
+                        width: 300px;
+                        height: 300px;
+                        
+                        img {
+                            width: 70%;
+                            height: 70%;
+                            margin: auto;
+                            display: flex;
+                            justify-content: center;
+                            border-radius: 100%;
+                            background-color: $colorRedMaroon;
+                        }
+                    }
+                    
+                }
+                .card-identity{
+                    padding: 20px;
+                    .fullname {
+                        font-weight: 600;
+                        font-family: $fontPoppins;
+                        text-align: center;
+                        font-size: 20px;
+                    }
+                    .division{
+                        margin: auto;
+                        padding: 5px;
+                        border-radius: 5px;
+                        font-family: $fontPoppins;
+                        font-weight: 600;
+                        text-align: center;
+                        font-size: 14px;
+                        // background-color: $colorRedMaroon;
+                    }
+                    .phonenumber{
+                        button{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            background-color: rgb(40, 160, 40);
+                            font-family: $fontPoppins;
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

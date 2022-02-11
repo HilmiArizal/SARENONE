@@ -15,7 +15,6 @@ function Header() {
   });
 
   const handleScroll = () => {
-    console.log(window.scrollY);
       if (window.scrollY >= 500) {
         setAddClass(true);
       } else {
@@ -113,6 +112,16 @@ function Header() {
                 </Link>
                 <Link
                   activeClass="link-active"
+                  to="section-about"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={100}
+                >
+                  <li> About</li>
+                </Link>
+                <Link
+                  activeClass="link-active"
                   to="section-product"
                   spy={true}
                   smooth={true}
@@ -130,16 +139,6 @@ function Header() {
                   duration={100}
                 >
                   <li> Team</li>
-                </Link>
-                <Link
-                  activeClass="link-active"
-                  to="section-about"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={100}
-                >
-                  <li> About</li>
                 </Link>
               </ul>
             </form>

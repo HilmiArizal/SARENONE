@@ -9,7 +9,7 @@ export const fetchTeam = () => {
             const res = await axios.get(API_URL_LOCAL + `team/getTeam`);
             dispatch({
                 type: FETCH_DATA_TEAM_SUCCESS,
-                payload: res.data
+                payload: res.data.data
             })            
         } catch (err) {
             console.log(err);
